@@ -16,7 +16,7 @@ export class AuthService {
   private readonly _Router = inject(Router);
 
   setRegisterForm(data:object):Observable<any>{
-   return this._HttpClient.post(`${environment.baseUrl}/api/v1/auth/signin`, data)
+   return this._HttpClient.post(`${environment.baseUrl}/api/v1/auth/signup`, data)
   }
 
   setLoginForm(data:object):Observable<any>{
